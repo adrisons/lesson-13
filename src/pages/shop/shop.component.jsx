@@ -1,9 +1,6 @@
 import React from "react";
-import { connect } from "react-redux";
 import { Route } from "react-router-dom";
-import { createStructuredSelector } from "reselect";
 import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
-import { selectCollections } from "../../redux/shop/shop.selector.js";
 import CollectionPage from "../collection/collection.component";
 
 const ShopPage = ({ match }) => (
@@ -13,8 +10,4 @@ const ShopPage = ({ match }) => (
   </div>
 );
 
-const mapStateToProps = createStructuredSelector({
-  collections: selectCollections,
-});
-
-export default connect(mapStateToProps)(ShopPage);
+export default ShopPage;
