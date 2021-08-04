@@ -1,6 +1,3 @@
-## Lesson-13
-
-Let's update our app so that after a user signs-in they are redirected to the home page, also if a user is signed into our application, we don't want them to be able to access the signinandsignup page.
 
 # How to fork and clone
 
